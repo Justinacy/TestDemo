@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TestClass;
 using TestDemo.TestClass;
 
 namespace TestDemo
@@ -121,9 +120,18 @@ namespace TestDemo
             var value = AsyncConsoleWork().GetAwaiter().GetResult();
             Console.WriteLine(value);
 
-           
+
             #region 泛型
 
+            #endregion
+
+            #region 记录
+            RecordTest recordTest = new RecordTest("chaoyu", "http://caidui.com","那");
+            //两种声明方式
+            RecordTestOne recordTestOne = new RecordTestOne("chaoyu", "http://caidui.com");
+            RecordTestOne recordTestTwo = new("chaoyu", "http://caidui.com");
+            Console.WriteLine(recordTestOne.Equals(recordTestTwo));
+            Console.WriteLine(ReferenceEquals(recordTestOne, recordTestTwo));
             #endregion
         }
 

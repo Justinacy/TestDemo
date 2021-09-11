@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestClass
+namespace TestDemo.TestClass
 {
     /// <summary>
     /// 派生抽象基类必须重写基类中所有抽象方法

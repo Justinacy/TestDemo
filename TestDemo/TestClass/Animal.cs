@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestClass
+namespace TestDemo.TestClass
 {
     /// <summary>
     /// 简单的访问者模式
